@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const user={
+            "name":"abc",
+            "age":18,
+            "courses":["fsd1","de",'fsd2'],
+            "address":["t1","t2",{"t3":"try again"}]
+        }
+       console.log(user.courses[2])
+       console.log(user.address[2])
+       console.log(user.address[2]["t3"])
+       const sub={
+        "FSD":[
+            {
+                "topic":"HTML",
+                "course":"Beginner",
+                "content":{"tags":"Table1","Form":"xyz"}
+            },
+            {
+                "topic":"CSS",
+                "course":"Beginner",
+                "content":["tags","table","form"]
+            }
+        ]
+       }
+       console.log(sub.FSD[0].content.tags)
+       console.log(sub.FSD[1].content[0])
+
+    </script>
+</body>
+</html>

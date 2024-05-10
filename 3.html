@@ -1,0 +1,38 @@
+<!-- WRITE ONE JSON STRING WITH DATE PROPERTY (YYYY-MM-DD) AND PRINT DATE IN INDIAN STANDARD TIME BY CLICKING A BUTTON -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const sub={
+        "FSD":[
+            {
+                "topic":"HTML",
+                "course":"Beginner",
+                "content":["tags","table","form"]
+            },
+            {
+                "topic":"CSS",
+                "course":"Beginner",
+                "content":["tags","table","form"]
+            }
+        ]
+       }
+       for(i in sub.FSD){
+        for(j in sub.FSD[i]){
+            console.log(sub.FSD[i][j])
+        }
+       }
+        function event1(){
+            let user={"name":"abc","dob":"2004-06-03"};
+            dob1=new Date(user.dob);
+            document.write("birthdate of "+user.name+" is "+dob1);
+        }
+    </script>
+    <button onclick="event1()" style="height: 25%; width: 15%; background-color:cornflowerblue">Find your birthday in IST!</button>
+</body>
+</html>

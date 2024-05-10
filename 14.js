@@ -1,0 +1,7 @@
+var OS=require("os")
+console.log(OS.arch())
+console.log(OS.hostname())
+console.log(OS.platform())
+console.log(OS.tmpdir())
+console.log(OS.freemem())
+console.log(OS.type())

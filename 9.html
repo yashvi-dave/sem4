@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="a1"></p>
+    <script>
+        i=10;
+        function f1(){  
+            p1=document.getElementById("a1");
+                p1.style.fontSize=i+"px";
+                p1.style.color="powderblue";
+                p1.innerHTML="Hello";
+                if(i<=50){
+                    i=i+10;
+                }
+        }
+        setInterval(f1,1000)
+    </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+var e=require("events")
+var ee=new e.EventEmitter()
+ee.on('sayName',()=>{console.log("Your name is XYZ")})
+ee.emit("sayName")
+ee.on("start",(start,end)=>{console.log(`started from ${start} and ended at ${end}`)})
+ee.emit('start',1,100)
+ee.on("sayName",()=>{
+    console.log("your surname is ABC")
+})
+ee.emit("sayName")
